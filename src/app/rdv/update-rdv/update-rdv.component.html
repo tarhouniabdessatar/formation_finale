@@ -1,0 +1,26 @@
+
+<h2 align="center">Update RDV</h2>
+
+
+  <div class="form-group">
+    <label for="IPP">IPP</label>
+    <input [(ngModel)]="Ipp" required  type="text" class="form-control" id="IPP" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="Nom">NOM</label>
+    <input [(ngModel)]="Nom" type="text" class="form-control" id="Nom" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="Prenom">Prenom</label>
+    <input [(ngModel)]="Prenom" type="text" class="form-control" id="Prenom" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="Service">Service</label>
+    <input [(ngModel)]="Service"  type="text" class="form-control" id="Service" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="DateRdv">Date</label>
+    <input [(ngModel)]="DateRdv"  type="date" class="form-control" id="DateRdv" aria-describedby="emailHelp">
+  </div>
+
+  <button  class="btn btn-danger" (click)="saveUpdateRdv()">Modifier</button>
