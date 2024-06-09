@@ -14,13 +14,13 @@ pipeline {
           }}
             stage('Build Docker Image') {
             steps {
-                sh 'docker build -t hmproject_by_awem .'
+                sh 'docker build -t hmproject_by_tarhouni .'
             }}
 
             stage('Tag and Push Docker Image') {
           steps {
               script {
-            sh "docker tag hmproject_by_awem awemkefi/hm_project:latest"
+            sh "docker tag hmproject_by_tarhouni awemkefi/hm_project:latest"
             sh "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"
             sh 'docker push awemkefi/hm_project:latest'
         }
