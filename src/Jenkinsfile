@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     // Run the container
-                    sh "docker run -d --name hmproject_by_awem_A.kefi-container -p 7077:80 hmproject_by_awem"
+                    sh "docker run -d --name hmproject_by_tarhouni-container -p 7088:80 formation_finale"
                          }
 
                  }}
