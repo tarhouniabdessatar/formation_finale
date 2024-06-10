@@ -1,7 +1,7 @@
 pipeline {
     environment {
-        DOKER_CONTAINER_NAME = "AK-container"
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub_cred_ak')
+        DOKER_CONTAINER_NAME = "AK-container_tarhouni"
+        DOCKERHUB_CREDENTIALS = credentials('docker_token_tarhouni')
                     }
 
 
