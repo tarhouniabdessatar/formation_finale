@@ -20,9 +20,9 @@ pipeline {
             stage('Tag and Push Docker Image') {
           steps {
               script {
-            sh "docker tag hmproject_by_tarhouni tarhouniabdessatar/formation_finale:latest"
+            sh "docker tag hmproject_by_tarhouni tarhouniabdel/hmprojectar:latest"
             sh "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"
-            sh 'docker push tarhouniabdessatar/formation_finale:latest'
+            sh 'docker push tarhouniabdel/hmprojectar:latest'
         }
             }
            post {
