@@ -1,4 +1,4 @@
-Étape 1 : Étape de construction
+#Étape 1 : Étape de construction
 
 # Utilise la version 16 de Node.js comme image de base pour l'étape de construction.
 FROM node:18 AS build
