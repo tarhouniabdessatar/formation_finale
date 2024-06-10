@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        DOKER_CONTAINER_NAME = "AK-container_tarhouni"
+        DOKER_CONTAINER_NAME = "container_tarhouni"
         DOCKERHUB_CREDENTIALS = credentials('docker_token_tarhouni')
                     }
 
@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     // Run the container
-                    sh "docker run -d --name hmproject_by_tarhouni2024-container -p 7088:80 hmproject_by_tarhouni"
+                    sh "docker run -d --name hmproject_by_tarhouni2024_container -p 7088:80 hmproject_by_tarhouni"
                          }
 
                  }}
